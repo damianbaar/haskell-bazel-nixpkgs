@@ -1,0 +1,6 @@
+resolver: lts-14.20
+
+packages:
+  - zlib-0.6.2 # zlib-0.6.2
+  - conduit
+  - lens

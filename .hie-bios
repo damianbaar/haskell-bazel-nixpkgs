@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+set -euo pipefail
+bazel build //:repl --output_groups=hie_bios --disk_cache=.bazel-cache
+cat bazel-bin/repl@hie-bios >"$HIE_BIOS_OUTPUT"

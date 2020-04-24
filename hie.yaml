@@ -1,0 +1,21 @@
+# cradle: 
+#   cabal:
+#     - path: "./package/lib-a"
+#       component: "lib:lib-a"
+#     - path: "./package/haskell-basic-lib"
+#       component: "lib:haskell-basic-lib"
+# cradle:
+  # cabal:
+  #   - path: "./package/lib-a/src"
+  #     component: "lib:lib-a"
+  #   - path: "./package/haskell-basic-lib/src"
+  #     component: "lib:haskell-basic-lib"
+cradle:
+  bios:
+    program: ".hie-bios"
+    # dependency-program: ./auto/dependency.sh
+# dependencies:
+#   # - ./auto/dependency.sh
+#   - package.yaml
+#   - shell.nix
+#   - default.nix

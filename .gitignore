@@ -1,0 +1,13 @@
+.ijwb
+.bazel-cache
+bazel-*
+.ijwb
+dist-*
+stack-*
+.idea
+.stack-*
+temp
+dist
+.ijwb
+.bazel-cache
+dist

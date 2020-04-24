@@ -1,0 +1,19 @@
+package(default_visibility = ["//visibility:public"])
+
+load(
+    "@rules_haskell//haskell:defs.bzl",
+    "haskell_binary",
+    "haskell_repl",
+    "haskell_library",
+    "haskell_toolchain_library",
+)
+
+# https://github.com/tweag/rules_haskell/blob/master/haskell/repl.bzl#L554
+haskell_repl(
+  name = "repl",
+  deps = [
+    "//package/haskell-basic-lib",
+    "//package/TestLib",
+    # "//package/lib-a"
+  ]
+)
